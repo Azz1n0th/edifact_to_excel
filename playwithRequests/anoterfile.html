@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html class="ltr" dir=" lang.dir" lang="en-US">
+<head>
+    <link rel="Shortcut Icon" href="<%= themeDisplay.getPathThemeImage() %>/liferay.ico"/>
+    <title>Login - Partner Integration Portal</title> <!-- Bootstrap Core CSS -->
+    <link href="/ingram-theme/css/bootstrap.min.css" rel="stylesheet">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport"/>
+    <link href="http://connect-test.ingrammicro.com/o/mentions-web/css/mentions.css" rel="stylesheet" type="text/css"/>
+    <link href="http://connect-test.ingrammicro.com/o/dynamic-data-mapping-form-renderer/css/main.css" rel="stylesheet"
+          type="text/css"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <link data-senna-track="temporary"
+          href="http://connect-test.ingrammicro.com/o/ingram-login-theme/images/liferay.ico" rel="Shortcut Icon"/>
+    <link data-senna-track="temporary" href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;login"
+          rel="canonical"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;zh&#x2f;login" hreflang="zh-CN"
+          rel="alternate"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;es&#x2f;login" hreflang="es-ES"
+          rel="alternate"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;iw&#x2f;login" hreflang="iw-IL"
+          rel="alternate"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;ja&#x2f;login" hreflang="ja-JP"
+          rel="alternate"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;fi&#x2f;login" hreflang="fi-FI"
+          rel="alternate"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;ca&#x2f;login" hreflang="ca-ES"
+          rel="alternate"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;hu&#x2f;login" hreflang="hu-HU"
+          rel="alternate"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;fr&#x2f;login" hreflang="fr-FR"
+          rel="alternate"/>
+    <link data-senna-track="temporary" href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;login"
+          hreflang="x-default" rel="alternate"/>
+    <link data-senna-track="temporary" href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;login"
+          hreflang="en-US" rel="alternate"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;pt&#x2f;login" hreflang="pt-BR"
+          rel="alternate"/>
+    <link data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;de&#x2f;login" hreflang="de-DE"
+          rel="alternate"/>
+    <link class="lfr-css-file" data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;o&#x2f;ingram-login-theme&#x2f;css&#x2f;aui&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;ingramlogintheme_WAR_ingramlogintheme&#x26;languageId&#x3d;en_US&#x26;b&#x3d;7002&#x26;t&#x3d;213"
+          id="liferayAUICSS" rel="stylesheet" type="text/css"/>
+    <link data-senna-track="temporary"
+          href="&#x2f;o&#x2f;frontend-css-web&#x2f;main&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;ingramlogintheme_WAR_ingramlogintheme&#x26;languageId&#x3d;en_US&#x26;b&#x3d;7002&#x26;t&#x3d;1489666112336"
+          id="liferayPortalCSS" rel="stylesheet" type="text/css"/>
+    <script data-senna-track="temporary" type="text/javascript">var Liferay=Liferay||{};
+Liferay.Browser={acceptsGzip:function(){return!0},getMajorVersion:function(){return 0},getRevision:function(){return""},getVersion:function(){return""},isAir:function(){return!1},isChrome:function(){return!1},isFirefox:function(){return!1},isGecko:function(){return!1},isIe:function(){return!1},isIphone:function(){return!1},isLinux:function(){return!1},isMac:function(){return!1},isMobile:function(){return!1},isMozilla:function(){return!1},isOpera:function(){return!1},isRtf:function(){return!1},isSafari:function(){return!1},
+isSun:function(){return!1},isWebKit:function(){return!1},isWindows:function(){return!1}};Liferay.Data=Liferay.Data||{};Liferay.Data.NAV_SELECTOR="#navigation";Liferay.Data.NAV_SELECTOR_MOBILE="#navigationCollapse";Liferay.Data.isCustomizationView=function(){return!1};Liferay.Data.notices=[null];Liferay.PortletKeys={DOCUMENT_LIBRARY:"com_liferay_document_library_web_portlet_DLPortlet",DYNAMIC_DATA_MAPPING:"com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet",ITEM_SELECTOR:"com_liferay_item_selector_web_portlet_ItemSelectorPortlet"};
+Liferay.PropsValues={JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT:3E4,NTLM_AUTH_ENABLED:!1,UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE:104857600};
+Liferay.ThemeDisplay={getLayoutId:function(){return"47"},getLayoutRelativeURL:function(){return"/login"},getLayoutURL:function(){return"http://connect-test.ingrammicro.com/login"},getParentLayoutId:function(){return"0"},isControlPanel:function(){return!1},isPrivateLayout:function(){return"false"},isVirtualLayout:function(){return!1},getBCP47LanguageId:function(){return"en-US"},getCDNBaseURL:function(){return"http://connect-test.ingrammicro.com"},getCDNDynamicResourcesHost:function(){return""},getCDNHost:function(){return""},
+getCompanyGroupId:function(){return"20195"},getCompanyId:function(){return"20155"},getDefaultLanguageId:function(){return"en_US"},getDoAsUserIdEncoded:function(){return""},getLanguageId:function(){return"en_US"},getParentGroupId:function(){return"20182"},getPathContext:function(){return""},getPathImage:function(){return"/image"},getPathJavaScript:function(){return"/o/frontend-js-web"},getPathMain:function(){return"/c"},getPathThemeImages:function(){return"http://connect-test.ingrammicro.com/o/ingram-login-theme/images"},
+getPathThemeRoot:function(){return"/o/ingram-login-theme"},getPlid:function(){return"40882"},getPortalURL:function(){return"http://connect-test.ingrammicro.com"},getScopeGroupId:function(){return"20182"},getScopeGroupIdOrLiveGroupId:function(){return"20182"},getSessionId:function(){return""},getSiteGroupId:function(){return"20182"},getURLControlPanel:function(){return"/group/control_panel?refererPlid\x3d40882"},getURLHome:function(){return"http://connect-test.ingrammicro.com/home-page"},getUserId:function(){return"20159"},
+getUserName:function(){return""},isAddSessionIdToURL:function(){return!1},isFreeformLayout:function(){return!1},isImpersonated:function(){return!1},isSignedIn:function(){return!1},isStateExclusive:function(){return!1},isStateMaximized:function(){return!1},isStatePopUp:function(){return!1}};var themeDisplay=Liferay.ThemeDisplay;
+Liferay.AUI={getAvailableLangPath:function(){return"available_languages.jsp?browserId\x3dother\x26themeId\x3dingramlogintheme_WAR_ingramlogintheme\x26colorSchemeId\x3d01\x26languageId\x3den_US\x26b\x3d7002\x26t\x3d1489666112791"},getCombine:function(){return!1},getComboPath:function(){return"/combo/?browserId\x3dother\x26minifierType\x3d\x26languageId\x3den_US\x26b\x3d7002\x26t\x3d1489666112791\x26"},getDateFormat:function(){return"%m/%d/%Y"},getEditorCKEditorPath:function(){return"/o/frontend-editor-ckeditor-web"},
+getFilter:function(){return"raw"},getFilterConfig:function(){var a=null;this.getCombine()||(a={replaceStr:".js"+this.getStaticResourceURLParams(),searchExp:"\\.js$"});return a},getJavaScriptRootPath:function(){return"/o/frontend-js-web"},getLangPath:function(){return"aui_lang.jsp?browserId\x3dother\x26themeId\x3dingramlogintheme_WAR_ingramlogintheme\x26colorSchemeId\x3d01\x26languageId\x3den_US\x26b\x3d7002\x26t\x3d1489666112791"},getPortletRootPath:function(){return"/html/portlet"},getStaticResourceURLParams:function(){return"?browserId\x3dother\x26minifierType\x3d\x26languageId\x3den_US\x26b\x3d7002\x26t\x3d1489666112791"}};
+Liferay.authToken="rTsfJRVF";Liferay.currentURL="/login";Liferay.currentURLEncoded="%2Flogin";
+    </script>
+    <script src="/o/js_loader_modules?t=213" type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/jquery/jquery.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/lexicon/bootstrap.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/loader/config.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/loader/loader.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/lodash/lodash.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui/aui.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-base-html5-shiv/aui-base-html5-shiv.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/browser_selectors.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/modules.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/aui_sandbox.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/lexicon/collapsible-search.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/lexicon/side-navigation.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/jquery/fm.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/jquery/form.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/lodash/util.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/misc/svg4everybody.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/arraylist-add/arraylist-add.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/arraylist-filter/arraylist-filter.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/arraylist/arraylist.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/array-extras/array-extras.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/array-invoke/array-invoke.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/attribute-base/attribute-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/attribute-complex/attribute-complex.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/attribute-core/attribute-core.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/attribute-observable/attribute-observable.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/attribute-extras/attribute-extras.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/base-base/base-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/base-pluginhost/base-pluginhost.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/classnamemanager/classnamemanager.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/datatype-xml-format/datatype-xml-format.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/datatype-xml-parse/datatype-xml-parse.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/dom-base/dom-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/dom-core/dom-core.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/dom-screen/dom-screen.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/dom-style/dom-style.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-base/event-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-custom-base/event-custom-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-custom-complex/event-custom-complex.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-delegate/event-delegate.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-focus/event-focus.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-hover/event-hover.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-key/event-key.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-mouseenter/event-mouseenter.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-mousewheel/event-mousewheel.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-outside/event-outside.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-resize/event-resize.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-simulate/event-simulate.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/event-synthetic/event-synthetic.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/intl/intl.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/io-base/io-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/io-form/io-form.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/io-queue/io-queue.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/io-upload-iframe/io-upload-iframe.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/io-xdr/io-xdr.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/json-parse/json-parse.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/json-stringify/json-stringify.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/node-base/node-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/node-core/node-core.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/node-event-delegate/node-event-delegate.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/node-event-simulate/node-event-simulate.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/node-focusmanager/node-focusmanager.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/node-pluginhost/node-pluginhost.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/node-screen/node-screen.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/node-style/node-style.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/oop/oop.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/plugin/plugin.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/pluginhost-base/pluginhost-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/pluginhost-config/pluginhost-config.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/querystring-stringify-simple/querystring-stringify-simple.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/queue-promote/queue-promote.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/selector-css2/selector-css2.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/selector-css3/selector-css3.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/selector-native/selector-native.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/selector/selector.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/widget-base/widget-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/widget-htmlparser/widget-htmlparser.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/widget-skin/widget-skin.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/widget-uievents/widget-uievents.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/yui-throttle/yui-throttle.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-base-core/aui-base-core.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-base-lang/aui-base-lang.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-classnamemanager/aui-classnamemanager.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-component/aui-component.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-debounce/aui-debounce.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-delayed-task-deprecated/aui-delayed-task-deprecated.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-event-base/aui-event-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-event-input/aui-event-input.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-form-validator/aui-form-validator.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-node-base/aui-node-base.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-node-html5/aui-node-html5.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-selector/aui-selector.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/aui/aui-timer/aui-timer.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/dependency.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/dom_task_runner.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/events.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/language.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/liferay.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/util.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/portal.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/portlet.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/workflow.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/address.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/form.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/form_placeholders.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/icon.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/menu.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/notice.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script data-senna-track="permanent"
+            src="/o/frontend-js-web/liferay/poller.js?browserId=other&amp;minifierType=&amp;languageId=en_US&amp;b=7002&amp;t=1489666112791"
+            type="text/javascript"></script>
+    <script src="/o/js_bundle_config?t=32" type="text/javascript"></script>
+    <script data-senna-track="temporary" type="text/javascript">
+        Liferay.Portlet.list=["com_liferay_login_web_portlet_LoginPortlet","com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet","com_liferay_portal_search_web_portlet_SearchPortlet","com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"];
+    </script>
+    <link class="lfr-css-file" data-senna-track="temporary"
+          href="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;o&#x2f;ingram-login-theme&#x2f;css&#x2f;main&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;ingramlogintheme_WAR_ingramlogintheme&#x26;languageId&#x3d;en_US&#x26;b&#x3d;7002&#x26;t&#x3d;213"
+          id="liferayThemeCSS" rel="stylesheet" type="text/css"/>
+    <style data-senna-track="temporary" type="text/css">
+         #p_p_id_com_liferay_login_web_portlet_LoginPortlet_ .portlet-content { border-width:; border-style: }
+    </style>
+    <link data-senna-track="temporary"
+          href="http://connect-test.ingrammicro.com/o/product-navigation-simulation-theme-contributor/css/simulation_panel.css?browserId=other&themeId=ingramlogintheme_WAR_ingramlogintheme&languageId=en_US&b=7002&t=1489666127098"
+          rel="stylesheet" type="text/css"/>
+    <link data-senna-track="temporary"
+          href="http://connect-test.ingrammicro.com/o/product-navigation-product-menu-theme-contributor/product_navigation_product_menu.css?browserId=other&themeId=ingramlogintheme_WAR_ingramlogintheme&languageId=en_US&b=7002&t=1489666127098"
+          rel="stylesheet" type="text/css"/>
+    <link data-senna-track="temporary"
+          href="http://connect-test.ingrammicro.com/o/product-navigation-control-menu-theme-contributor/product_navigation_control_menu.css?browserId=other&themeId=ingramlogintheme_WAR_ingramlogintheme&languageId=en_US&b=7002&t=1489666127098"
+          rel="stylesheet" type="text/css"/>
+    <style>
+         .portlet-decorate .portlet-content { border-style: none !important; border-width: 0px !important; } .sign-in-form { background-size: cover; padding: 40px 35px 35px 35px; box-sizing: border-box; box-shadow: 0 1px 5px #ccc; margin: 20px auto; } #_com_liferay_login_web_portlet_LoginPortlet__58_fm { background-size: cover; padding: 40px 35px 35px 35px; box-sizing: border-box; box-shadow: 0 1px 5px #ccc; margin: 20px auto; } .hero { margin-top: 25px; min-height: 150px; background: url(../img/IM-connect-logo.png) center no-repeat, url(../img/IM-connect-arrows.png) no-repeat left, url(../img/IM-connect-arrows.png) no-repeat right; background-color: #1178b2; background-size: contain; } .feature { min-height: 100px; overflow: hidden; } .portlet-title-default { display: none; } .portlet-topper { border: none; background: white; } footer, .footer-links a, footer ul li a { color: #ccc; margin-top: 100px; } .footer-links { background-color: #333; color: #ccc; width: 33.334%; float: left; border-right: 1px solid #000; padding: 10px 20px; min-height: 100px; } .copyright { position: fixed; bottom: 0; width: 100%; height: 40px; background-color: #000; text-align: center; } .portlet-title-text { display: none !important; }
+    </style>
+</head>
+<body class=" controls-visible yui3-skin-sam guest-site signed-out public-page site"> <!-- -->
+<header>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="/"> <img
+                    src="http://connect-test.ingrammicro.com/o/ingram-login-theme/images/logo-ingram.png"
+                    alt="Ingram Micro, Inc."/> </a></div>
+        </div>
+    </nav>
+</header>
+<div id="content" class="container-fluid">
+    <div class="columns-1" id="main-content" role="main">
+        <div class="portlet-layout row">
+            <div class="col-md-12 portlet-column portlet-column-only" id="column-1">
+                <div class="portlet-dropzone portlet-column-content portlet-column-content-only"
+                     id="layout-column_column-1">
+                    <div class="portlet-boundary portlet-boundary_com_liferay_login_web_portlet_LoginPortlet_ portlet-static portlet-static-end portlet-borderless portlet-login "
+                         id="p_p_id_com_liferay_login_web_portlet_LoginPortlet_">
+                        <section class="portlet" id="portlet_com_liferay_login_web_portlet_LoginPortlet">
+                            <header class="portlet-topper">
+                                <div class="portlet-title-default"><span class="portlet-name-text">Sign In</span></div>
+                                <menu class="portlet-topper-toolbar"
+                                      id="portlet-topper-toolbar_com_liferay_login_web_portlet_LoginPortlet"
+                                      type="toolbar"></menu>
+                            </header>
+                            <div class="portlet-content"><h2 class="portlet-title-text">Sign In</h2>
+                                <div class=" portlet-content-container">
+                                    <div class="portlet-body">
+                                        <style>
+                                             .aui .container-fluid { padding-right: 15px; padding-left: 15px; } .aui .row { margin-left: -15px; } .aui .form-inline label.checkbox { min-height: 20px; margin-bottom: 0; font-weight: 400; cursor: pointer; } .aui .form-inline label.checkbox input[type="checkbox"] { left: 0; margin-top: 4px; } .aui .form.sign-in-form input[type="text"], .aui .form.sign-in-form input[type="password"] { width: 100%; max-width: 100% !important; } .forgot-password-link { color: #0059b3 !important; float: right; } @media (min-width: 1200px) { .aui .row { margin-left: -15px; } } @media (max-width: 767px) { .aui body { padding-left: 0; padding-right: 0; } .forgot-password-link { margin-top: 15px; } .aui .form-inline label.checkbox { padding-left: 20px; } } .copyright { padding-top: 10px; left: 0; }
+                                        </style>
+                                        <div class="row">
+                                            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+                                                <form action="http&#x3a;&#x2f;&#x2f;connect-test&#x2e;ingrammicro&#x2e;com&#x2f;login&#x3f;p_p_id&#x3d;com_liferay_login_web_portlet_LoginPortlet&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;p_p_col_id&#x3d;column-1&#x26;p_p_col_count&#x3d;1&#x26;_com_liferay_login_web_portlet_LoginPortlet_javax&#x2e;portlet&#x2e;action&#x3d;&#x25;2Flogin&#x25;2Flogin&#x26;_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName&#x3d;&#x25;2Flogin&#x25;2Flogin&#x26;p_auth&#x3d;rTsfJRVF"
+                                                      class="form sign-in-form "
+                                                      data-fm-namespace="_com_liferay_login_web_portlet_LoginPortlet_"
+                                                      id="_com_liferay_login_web_portlet_LoginPortlet_loginForm"
+                                                      method="post"
+                                                      name="_com_liferay_login_web_portlet_LoginPortlet_loginForm"
+                                                      autocomplete="on">
+                                                    <fieldset class="input-container" disabled="disabled"><input
+                                                            class="field form-control"
+                                                            id="_com_liferay_login_web_portlet_LoginPortlet_formDate"
+                                                            name="_com_liferay_login_web_portlet_LoginPortlet_formDate"
+                                                            type="hidden" value="1512410732839"/> <input
+                                                            class="field form-control"
+                                                            id="_com_liferay_login_web_portlet_LoginPortlet_saveLastPath"
+                                                            name="_com_liferay_login_web_portlet_LoginPortlet_saveLastPath"
+                                                            type="hidden" value="false"/> <input
+                                                            class="field form-control"
+                                                            id="_com_liferay_login_web_portlet_LoginPortlet_redirect"
+                                                            name="_com_liferay_login_web_portlet_LoginPortlet_redirect"
+                                                            type="hidden" value=""/> <input class="field form-control"
+                                                                                            id="_com_liferay_login_web_portlet_LoginPortlet_doActionAfterLogin"
+                                                                                            name="_com_liferay_login_web_portlet_LoginPortlet_doActionAfterLogin"
+                                                                                            type="hidden"
+                                                                                            value="false"/>
+                                                        <div class="inline-alert-container lfr-alert-container"></div>
+                                                        <fieldset class="fieldset ">
+                                                            <div class="">
+                                                                <div class="form-group input-text-wrapper"><label>
+                                                                        class="control-label"
+                                                                        for="_com_liferay_login_web_portlet_LoginPortlet_login">
+                                                                    Email Address </label> <input
+                                                                        class="field clearable form-control"
+                                                                        id="_com_liferay_login_web_portlet_LoginPortlet_login"
+                                                                        name="_com_liferay_login_web_portlet_LoginPortlet_login"
+                                                                        type="text" value="&#x40;ingrammicro&#x2e;com"/>
+                                                                </div>
+                                                                <div class="form-group input-text-wrapper"><label
+                                                                        class="control-label"
+                                                                        for="_com_liferay_login_web_portlet_LoginPortlet_password">
+                                                                    Password </label> <input class="field form-control"
+                                                                                             id="_com_liferay_login_web_portlet_LoginPortlet_password"
+                                                                                             name="_com_liferay_login_web_portlet_LoginPortlet_password"
+                                                                                             type="password" value=""/>
+                                                                </div>
+                                                                <span id="_com_liferay_login_web_portlet_LoginPortlet_passwordCapsLockSpan"
+                                                                      style="display: none;">Caps Lock is on.</span>
+                                                                <div class="form-group form-inline input-checkbox-wrapper">
+                                                                    <label for="_com_liferay_login_web_portlet_LoginPortlet_rememberMe">
+                                                                        <input class="field"
+                                                                               id="_com_liferay_login_web_portlet_LoginPortlet_rememberMe"
+                                                                               name="_com_liferay_login_web_portlet_LoginPortlet_rememberMe"
+                                                                               onClick="" type="checkbox"/> Remember Me
+                                                                    </label></div>
+                                                            </div>
+                                                        </fieldset>
+                                                        <!-- <div class="button-holder " > <button class="btn btn-lg btn-primary btn-default" id="_com_liferay_login_web_portlet_LoginPortlet_xfhc" type="submit" > <span class="lfr-btn-label">Sign In</span> </button> </div> -->
+                                                        <button class="btn btn-primary pull-left" type="submit"
+                                                                style="background:#0059b3;">Sign In
+                                                        </button>&nbsp;&nbsp;&nbsp;&nbsp; <a
+                                                                href="http://connect-test.ingrammicro.com/login?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Fcreate_account"
+                                                                class="btn btn-primary " style="background:#0059b3;">Register</a>
+                                                        <a href="http://connect-test.ingrammicro.com/login?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Fforgot_password"
+                                                           class="forgot-password-link">Forgot Password?</a> <input
+                                                                class="field form-control"
+                                                                id="_com_liferay_login_web_portlet_LoginPortlet_checkboxNames"
+                                                                name="_com_liferay_login_web_portlet_LoginPortlet_checkboxNames"
+                                                                type="hidden" value="rememberMe"/></fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="#" id="hrefFm" method="post" name="hrefFm"><span></span></form>
+</div>
+<hr/>
+<footer class="container-fluid ">
+    <div>
+        <div class="copyright small"> Copyright &copy; 2017 Ingram Micro, Inc. All rights reserved.</div>
+    </div>
+</footer>
+<script type="text/javascript">Liferay.BrowserSelectors.run();</script>
+<script type="text/javascript">Liferay.currentURL="/login";Liferay.currentURLEncoded="%2Flogin";</script>
+<script type="text/javascript"></script>
+<script type="text/javascript">(function(){var b=AUI.$(document._com_liferay_login_web_portlet_LoginPortlet_loginForm);b.on("submit",function(a){submitForm(b)});b.fm("password").on("keypress",function(a){Liferay.Util.showCapsLock(a,"_com_liferay_login_web_portlet_LoginPortlet_passwordCapsLockSpan")})})();Liferay.Portlet.onLoad({canEditTitle:!1,columnPos:0,isStatic:"end",namespacedId:"p_p_id_com_liferay_login_web_portlet_LoginPortlet_",portletId:"com_liferay_login_web_portlet_LoginPortlet",refreshURL:"/c/portal/render_portlet?p_l_id\x3d40882\x26p_p_id\x3dcom_liferay_login_web_portlet_LoginPortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d%2Flogin"});
+AUI().use("liferay-menu","liferay-notice","aui-base","liferay-session","liferay-form","liferay-poller",function(b){b.UA.mobile&&Liferay.Util.addInputCancel();(function(){new Liferay.Menu;for(var a=Liferay.Data.notices,c=1;c<a.length;c++)new Liferay.Notice(a[c])})();Liferay.Session=new Liferay.SessionBase({autoExtend:!0,redirectOnExpire:!1,redirectUrl:"null",sessionLength:30,warningLength:1});(function(){Liferay.Form.register({id:"_com_liferay_login_web_portlet_LoginPortlet_loginForm",fieldRules:[{body:"",
+custom:!1,errorMessage:"",fieldName:"_com_liferay_login_web_portlet_LoginPortlet_password",validatorName:"required"},{body:"",custom:!1,errorMessage:"",fieldName:"_com_liferay_login_web_portlet_LoginPortlet_login",validatorName:"required"}],onSubmit:function(a){a.preventDefault()}});Liferay.on("destroyPortlet",function(a){"com_liferay_login_web_portlet_LoginPortlet"===a.portletId&&delete Liferay.Form._INSTANCES._com_liferay_login_web_portlet_LoginPortlet_loginForm});b.all("#_com_liferay_login_web_portlet_LoginPortlet_loginForm .input-container").removeAttribute("disabled");
+Liferay.fire("_com_liferay_login_web_portlet_LoginPortlet_formReady")})()});
+</script>
+<script src="http://connect-test.ingrammicro.com/o/ingram-login-theme/js/main.js?browserId=other&amp;languageId=en_US&amp;b=7002&amp;t=213"
+        type="text/javascript"></script>
+<script>var PATH_PORTLET_CONFIGURATION_CSS_WEB="/o/portlet-configuration-css-web";AUI().applyConfig({groups:{portlet_css:{base:PATH_PORTLET_CONFIGURATION_CSS_WEB+"/js/",modules:{"liferay-look-and-feel":{path:"look_and_feel.js",requires:"aui-color-picker-popover aui-io-plugin-deprecated aui-io-request aui-tabview liferay-portlet-url liferay-util-window liferay-widget-zindex".split(" ")}},root:PATH_PORTLET_CONFIGURATION_CSS_WEB+"/js/"}}});
+Liferay.provide(Liferay.Portlet,"loadCSSEditor",function(a,b,c,d){Liferay.PortletCSS.init(a,b,c,d)},["liferay-look-and-feel"]);
+</script>
+<script type="text/javascript">
+    AUI().use("aui-base",function(a){(a=window.frameElement)&&"simulationDeviceIframe"===a.getAttribute("id")&&AUI().one("body").addClass("lfr-has-simulation-panel")});
+</script>
+</body>
+</html>
