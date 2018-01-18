@@ -5,11 +5,16 @@ except ImportError:
     pip.main(['install', 'XlsxWriter'])
 import sqlite3
 
+input_file = input("Input File Name: ")
+output_file = input("Output File Name: ")
+line_separator = input("Please indicate PO Line Separator: ")
+
 conn = sqlite3.connect("segments.sqlite")
-workbook = xlsxwriter.Workbook('Report.xlsx')
+workbook = xlsxwriter.Workbook(output_file)
 worksheet = workbook.add_worksheet()
 
 
+# convert an EDIFACT line to a list
 def line_to_list(line):
     if "'" in line:
         line1 = line.split("'")[0]
@@ -20,25 +25,47 @@ def line_to_list(line):
     while line1.count('') > 0:
         line1.remove('')
     if "COM+" in line1[0]:
-        line1[1] = "COM+" + line1[1]
-        line1[1], line1[0] = line1
-        line1[1] = line1[1].strip("COM+")
-        return line1
+        line1[1] = "COM+" + line1[-1]
+        line1 = line1[1], line1[0][4:]
+    elif "LIN+" in line1[0]:
+        try:
+            line1[-1] = int(line1[-1])
+        except:
+            pass
+        if type(line1[-1]) is int:
+            line1.remove(line1[-1])
+        line1[0] = "LIN+" + line1[-1]
+        line1.remove(line1[-1])
     else:
-        return line1
+        pass
+    return line1
 
 
-# open file translation file. File must be with Start BGM and finish before UNT+
-
-with open("test_semple.txt", 'r') as test_file:
-    segment_to_description = dict()
+# open file for translation.
+with open(input_file, 'r') as test_file:
+    segment_to_description = {}
     header = []
+    column = 1
+    skip_elements = ['UNA' ,'UNB', 'UNH', 'INV', 'UNT', 'UNZ']
     for line in test_file:
+        content = ""
         line = line_to_list(line)
-        if line[0] not in segment_to_description.keys() and "LIN+" not in line[0]:
-            description = conn.cursor().execute("SELECT description FROM segments WHERE segment=?",
-                                                (line[0],)).fetchone()[0]
-            segment_to_description[line[0]] = description
-            header.append(description)
+        if line_separator in line[0]:
+            column += 1
+        if line[0] not in segment_to_description.keys():
+            try:
+                description = conn.cursor().execute("SELECT description FROM segments WHERE segment=?",
+                                                                                        (line[0],)).fetchone()[0]
+                segment_to_description[line[0]] = description
+                header.append(description)
+                worksheet.write(0, header.index(description), description)
+            except:
+                pass
+        for current in line[1:]:
+            content += current + " "
+        try:
+            worksheet.write(int(column), int(header.index(segment_to_description[line[0]])), content)
+        except:
+            pass
 
 workbook.close()
